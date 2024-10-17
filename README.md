@@ -82,3 +82,79 @@ This section consists of:
         <p>html only with proper layout, no styling</p>
     </section>
 </section>
+```
+
+### Middle Page
+
+The middle page is divided into three main columns:
+
+Projects: A list of recent projects with links.
+- **Work Experience**: Details about work experience and open-source contributions.
+- **Education**: Information about educational background and courses taken.
+
+```
+<section id="middle-page">
+    <div class="projects">
+        <p class="project-list-el"><a href="#">HTML Only Portfolio</a></p>
+        <p class="project-list-el"><a href="#">Calculator</a></p>
+        <p class="project-list-el"><a href="#">Quiz App</a></p>
+        <p class="project-list-el"><a href="#">Counter Timer</a></p>
+        <p class="project-list-el"><a href="#">Product Upcoming Page</a></p>
+    </div>
+
+    <div class="wk-exp-op-src">
+        <div class="wk-exp">
+            <p>Work Experience</p>
+            <p>roadmap.sh: Solved all frontend projects.</p>
+            <a href="#">Visit my profile</a>
+        </div>
+        
+        <div class="op-src">
+            <p>OpenSource Work</p>
+            <p>Contributed to 50 opensource projects. Make my own projects with 200 GitHub stars.</p>
+            <a href="#">Visit my Github profile</a>
+        </div>
+    </div>
+
+    <div class="education">
+        <p>Education</p>
+        <ul>
+            <li>Object-Oriented Programming</li>
+            <li>Data Structure and Algorithms</li>
+            <li>Web Engineering</li>
+        </ul>
+    </div>
+</section>
+```
+
+### Reviews
+
+The reviews section highlights feedback from professors:
+
+```
+<section id="reviews">
+    <p>Reviews from my teachers:</p>
+    <div class="reviews-blocks">
+        <div class="r-block">
+            <p>Thierry Dohouin was a brilliant student, always stood out with his assignments.</p>
+            <div>
+                <span>Mark Aurel</span>
+                <span>Assistant Professor</span>
+            </div>
+        </div>
+    </div>
+</section>
+```
+
+### Footer
+
+The footer contains a copyright message:
+
+```
+<footer>
+    <p>ⓒ all right reserved 2025</p>
+</footer>
+```
+
+### Conclusion
+This website demonstrates a simple, clean layout using basic HTML and CSS. It can serve as a base for more complex front-end projects, with options for further customization and styling.
