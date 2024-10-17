@@ -92,7 +92,7 @@ Projects: A list of recent projects with links.
 - **Work Experience**: Details about work experience and open-source contributions.
 - **Education**: Information about educational background and courses taken.
 
-```
+```html
 <section id="middle-page">
     <div class="projects">
         <p class="project-list-el"><a href="#">HTML Only Portfolio</a></p>
@@ -131,7 +131,7 @@ Projects: A list of recent projects with links.
 
 The reviews section highlights feedback from professors:
 
-```
+```html
 <section id="reviews">
     <p>Reviews from my teachers:</p>
     <div class="reviews-blocks">
@@ -150,7 +150,7 @@ The reviews section highlights feedback from professors:
 
 The footer contains a copyright message:
 
-```
+```html
 <footer>
     <p>ⓒ all right reserved 2025</p>
 </footer>
