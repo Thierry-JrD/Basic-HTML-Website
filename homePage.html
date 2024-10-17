@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML Website - Home Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+            font-family: "Comic Sans MS";
+        }
+
+        #container {
+            width: 75%;
+            border: 2px solid;
+        }
+
+        #topPage {
+            padding: 20px;
+        }
+
+        #topPage header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        header #logo {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logoSharp {
+            width: 30px;
+            height: 30px;
+            border: 2px solid;
+            border-radius: 5px;
+            background: #000;
+        }
+
+        header nav ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        header nav ul li {
+            list-style-type: none;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        header nav ul li a:active {
+            color: #3a3a3a;
+        }
+
+        #topPage #hero {
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #topPage #hero h1 {
+            font-size: 2em;
+            line-height: 60px;
+        }
+
+        #topPage #hero p {
+            color: #3a3a3a;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <section id="topPage">
+            <header>
+                <div id="logo">
+                    <span class="logoSharp"></span>
+                    <span>Thierry DOHOUIN</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="/Basic-HTML-Website/homePage.html">Home</a></li>
+                        <li>/</li>
+                        <li><a href="/Basic-HTML-Website/projects.html">Projects</a></li>
+                        <li>/</li>
+                        <li><a href="/Basic-HTML-Website/articles.html">Articles</a></li>
+                        <li>/</li>
+                        <li><a href="/Basic-HTML-Website/contacts.html">Contacts</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section id="hero">
+                <h1>FrontEnd Developer</h1>
+                <p>html only with proper layout, no styling</p>
+            </section>
+        </section>
+    </div>
+</body>
+</html>
