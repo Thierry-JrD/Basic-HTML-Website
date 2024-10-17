@@ -19,7 +19,7 @@
         }
 
         #container {
-            width: 75%;
+            width: 70%;
             border: 2px solid;
         }
 
@@ -92,6 +92,8 @@
         #middle-page {
             display: grid;
             grid-template-columns: 1.5fr 2fr 2fr;
+            border-bottom: 2px solid;
+            margin-bottom: 20px;
         }
 
         #middle-page .md-page-container {
@@ -102,6 +104,20 @@
             padding: 20px;
         }
 
+        .bt-space {
+            margin-bottom: 10px;
+        }
+
+        .xm-size {
+            font-size: 0.95em;
+            padding: 0 20px;
+        }
+
+        .pd-side {
+            padding: 0 20px;
+            font-family: Cambria;
+        }
+
         /* Projects */
         .projects {
             border-right: 2px solid;
@@ -109,26 +125,73 @@
         .project-list-el {
             padding: 5px 20px;
             font-family: Cambria;
+            list-style-type: square;
         }
         .project-list-el a {
             text-decoration: none;
             color: #000;
         }
 
+        .project-list-el li {
+            margin-left: 40px;
+        }
+
         /* Work Experience and OpenSource Work */
+
+        .wk-exp-op-src a {
+            text-decoration: none;
+        }
+
         .wk-exp {
             border-bottom: 2px solid;
+            padding-bottom: 20px;
         }
 
         /* Education */
         .education {
             border-left: 2px solid;
+            padding-bottom: 20px;
         }
 
         .div-line {
             width: 100%;
             height: 2px;
             background: #000;
+        }
+
+        /* Reviews */
+        #reviews {
+            padding: 20px;
+            padding-bottom: 120px;
+        }
+
+        .reviews-title {
+            margin-bottom: 15px;
+        }
+
+        #reviews .reviews-blocks {
+            display: flex;
+            gap: 20px;
+        }
+
+        .reviews-blocks .r-block {
+            width: 250px;
+            border: 2px solid;
+            border-radius: 30px;
+            padding: 20px;
+        }
+
+        .reviews-blocks .r-block div {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            color: #3a3a3a;
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 70px;
         }
     </style>
 </head>
@@ -171,14 +234,68 @@
             </div>
 
             <div class="wk-exp-op-src md-page-container">
-                <div class="wk-exp"><p class="md-page-title">Work Experience</p></div>
-                <div class="op-src"><p class="md-page-title">OpenSource Work</p></div>
+                <div class="wk-exp">
+                    <p class="md-page-title">Work Experience</p>
+                    <p class="bt-space xm-size">roadmap.sh</p>
+                    <p class="bt-space pd-side">Solved all the frontend projects</p>
+                    <a href="#" class="pd-side">Visit my profile</a>
+                </div>
+
+                <div class="op-src">
+                    <p class="md-page-title">OpenSource Work</p>
+                    <p class="bt-space pd-side">Contributed to 50 opensource projects. Make my own projects with 200 GitHub stars</p>
+                    <a href="https://github.com/Thierry-JrD/Basic-HTML-Website.git" class="pd-side">Visit my Github profile</a>
+                </div>
             </div>
 
             <div class="education md-page-container">
                 <p class="md-page-title">Education</p>
+                <p class="project-list-el">Graduated width 3.76 out of 4 CGPA. Won Acme Hackthon. Organized 30 sessions.</p>
+                <p class="project-list-el">Cources I took :</p>
+                <ul class="project-list-el">
+                    <li>Object Orented Programming</li>
+                    <li>Data Structure and Algorithms</li>
+                    <li>Web Engenieering</li>
+                    <li>Artificial Intelligence</li>
+                    <li>Human Computer Interaction</li>
+                    <li>Computer Graphics</li>
+                    <li>Database Managment Systems</li>
+                    <li>Distributed Database Systems</li>
+                    <li>Discrets Mathematics</li>
+                </ul>
             </div>
         </section>
+
+        <section id="reviews">
+            <p class="reviews-title">Reviews from my teachers :</p>
+            <div class="reviews-blocks">
+                <div class="r-block">
+                    <p>Thierry Dohouin was a brillant student, always stood out with his assignments.</p>
+                    <div>
+                        <span>Mark Aurel</span>
+                        <span>Assistant Professor</span>
+                    </div>
+                </div>
+                <div class="r-block">
+                    <p>Thierry Dohouin was a brillant student, always stood out with his assignments.</p>
+                    <div>
+                        <span>Mark Aurel</span>
+                        <span>Assistant Professor</span>
+                    </div>
+                </div>
+                <div class="r-block">
+                    <p>Thierry Dohouin was a brillant student, always stood out with his assignments.</p>
+                    <div>
+                        <span>Mark Aurel</span>
+                        <span>Assistant Professor</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>ⓒ all right reserved 2025</p>
+        </footer>
     </div>
 </body>
 </html>
