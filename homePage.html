@@ -23,8 +23,10 @@
             border: 2px solid;
         }
 
+        /* Top Page */
         #topPage {
             padding: 20px;
+            border-bottom: 2px solid;
         }
 
         #topPage header {
@@ -78,10 +80,55 @@
         #topPage #hero h1 {
             font-size: 2em;
             line-height: 60px;
+            word-spacing: 10px; /*--*/
+            letter-spacing: 2px; /*--*/
         }
 
         #topPage #hero p {
             color: #3a3a3a;
+        }
+
+        /* Middle Page */
+        #middle-page {
+            display: grid;
+            grid-template-columns: 1.5fr 2fr 2fr;
+        }
+
+        #middle-page .md-page-container {
+            width: 100%;
+        }
+
+        #middle-page .md-page-container .md-page-title {
+            padding: 20px;
+        }
+
+        /* Projects */
+        .projects {
+            border-right: 2px solid;
+        }
+        .project-list-el {
+            padding: 5px 20px;
+            font-family: Cambria;
+        }
+        .project-list-el a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        /* Work Experience and OpenSource Work */
+        .wk-exp {
+            border-bottom: 2px solid;
+        }
+
+        /* Education */
+        .education {
+            border-left: 2px solid;
+        }
+
+        .div-line {
+            width: 100%;
+            height: 2px;
+            background: #000;
         }
     </style>
 </head>
@@ -110,6 +157,27 @@
                 <h1>FrontEnd Developer</h1>
                 <p>html only with proper layout, no styling</p>
             </section>
+        </section>
+
+        <section id="middle-page">
+            <div class="projects md-page-container">
+                <p class="md-page-title">Projects</p>
+                
+                <p class="project-list-el"><a href="#">HTML Only Portfolio</a></p> <div class="div-line"></div>
+                <p class="project-list-el"><a href="#">Calculator</a></p> <div class="div-line"></div>
+                <p class="project-list-el"><a href="#">Quiz App</a></p> <div class="div-line"></div>
+                <p class="project-list-el"><a href="#">Counter Timer</a></p> <div class="div-line"></div>
+                <p class="project-list-el"><a href="#">Product Upcoming Page</a></p>
+            </div>
+
+            <div class="wk-exp-op-src md-page-container">
+                <div class="wk-exp"><p class="md-page-title">Work Experience</p></div>
+                <div class="op-src"><p class="md-page-title">OpenSource Work</p></div>
+            </div>
+
+            <div class="education md-page-container">
+                <p class="md-page-title">Education</p>
+            </div>
         </section>
     </div>
 </body>
